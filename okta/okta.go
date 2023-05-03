@@ -55,9 +55,11 @@ type Client struct {
 	OrgSetting                 *OrgSettingResource
 	Policy                     *PolicyResource
 	ProfileMapping             *ProfileMappingResource
+	RequestType							   *RequestTypeResource
 	Session                    *SessionResource
 	SmsTemplate                *SmsTemplateResource
 	Subscription               *SubscriptionResource
+	Team											 *TeamResource
 	ThreatInsightConfiguration *ThreatInsightConfigurationResource
 	TrustedOrigin              *TrustedOriginResource
 	User                       *UserResource
@@ -126,9 +128,11 @@ func NewClient(ctx context.Context, conf ...ConfigSetter) (context.Context, *Cli
 	c.OrgSetting = (*OrgSettingResource)(&c.resource)
 	c.Policy = (*PolicyResource)(&c.resource)
 	c.ProfileMapping = (*ProfileMappingResource)(&c.resource)
+	c.RequestType = (*RequestTypeResource)(&c.resource)
 	c.Session = (*SessionResource)(&c.resource)
 	c.SmsTemplate = (*SmsTemplateResource)(&c.resource)
 	c.Subscription = (*SubscriptionResource)(&c.resource)
+	c.Team = (*TeamResource)(&c.resource)
 	c.ThreatInsightConfiguration = (*ThreatInsightConfigurationResource)(&c.resource)
 	c.TrustedOrigin = (*TrustedOriginResource)(&c.resource)
 	c.User = (*UserResource)(&c.resource)

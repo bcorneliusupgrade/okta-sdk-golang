@@ -55,11 +55,11 @@ type Client struct {
 	OrgSetting                 *OrgSettingResource
 	Policy                     *PolicyResource
 	ProfileMapping             *ProfileMappingResource
-	RequestType							   *RequestTypeResource
+	RequestType                *RequestTypeResource
 	Session                    *SessionResource
 	SmsTemplate                *SmsTemplateResource
 	Subscription               *SubscriptionResource
-	Team											 *TeamResource
+	Team                       *TeamResource
 	ThreatInsightConfiguration *ThreatInsightConfigurationResource
 	TrustedOrigin              *TrustedOriginResource
 	User                       *UserResource
